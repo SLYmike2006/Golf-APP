@@ -18,14 +18,6 @@ class _MyHomePageState extends State<MyHomePage> {
         MaterialPageRoute(
             builder: (context) => const RecordPage(title: "Choose Videos")));
   }
-
-  void testpage() {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => const HTTPTestPage(title: "test")));
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,12 +65,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   child:
                       Text("Continue As Guest", textAlign: TextAlign.center)),
             ),
-            SizedBox(
-              width: 250.0,
-              child: ElevatedButton(
-                  onPressed: testpage,
-                  child: Text("HTTP TEST", textAlign: TextAlign.center)),
-            )
           ],
         ),
       ),
